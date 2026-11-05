@@ -119,7 +119,7 @@ export function LandingFooter() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-[1200px] flex-col gap-2 px-4 py-4 text-[11px] text-white/60 sm:flex-row sm:items-center sm:justify-between sm:px-6">
-          <p>Copyright © {new Date().getFullYear()} NAVTTC Job Portal Management System</p>
+          <p><p>Copyright © 2026 NAVTTC Job Portal Management System</p></p>
           <div className="flex gap-4">
             <span>Privacy Policy</span>
             <span>Terms and Conditions</span>
