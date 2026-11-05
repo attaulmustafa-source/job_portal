@@ -38,19 +38,22 @@ export default function SeekerJobDetailPage() {
   const already = applications.some((a) => a.jobId === job.id && a.seekerId === user?.id);
   const days = daysUntilExpiry(job.expiryDate);
 
-  function onApply() {
-    if (already) return;
-    if (!active) {
-      setToast("This job has expired or is closed.");
-      return;
-    }
-    if (!eligibility.ok) {
-      setToast(eligibility.message || "Please complete your profile before applying.");
-      return;
-    }
-    const result = applyToJob(job.id);
-    setToast(result.message);
+const onApply = useCallback(() => {
+  if (!job || already) return;
+
+  if (!active) {
+    setToast("This job has expired or is closed.");
+    return;
   }
+
+  if (!eligibility.ok) {
+    setToast(eligibility.message || "Please complete your profile before applying.");
+    return;
+  }
+
+  const result = applyToJob(job.id);
+  setToast(result.message);
+}, [job, already, active, eligibility, applyToJob]);
 
   return (
     <div>
