@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <rect width="120" height="120" rx="10" fill="#ffffff"/>
+  <g transform="translate(60,62)">
+    <!-- Laurel left -->
+    <path d="M-28-8c-6 8-8 18-6 28 8-4 14-12 16-22-4 2-8 0-10-6z" fill="#1a7a3a"/>
+    <path d="M-32 4c-4 10-4 20 0 28 8-6 12-14 12-24-4 2-8 0-12-4z" fill="#228B22"/>
+    <path d="M-26 20c-2 8 0 16 4 22 6-6 8-14 6-22-2 2-6 2-10 0z" fill="#1a7a3a"/>
+    <!-- Laurel right -->
+    <path d="M28-8c6 8 8 18 6 28-8-4-14-12-16-22 4 2 8 0 10-6z" fill="#1a7a3a"/>
+    <path d="M32 4c4 10 4 20 0 28-8-6-12-14-12-24 4 2 8 0 12-4z" fill="#228B22"/>
+    <path d="M26 20c2 8 0 16-4 22-6-6-8-14-6-22 2 2 6 2 10 0z" fill="#1a7a3a"/>
+    <!-- Star / crescent center -->
+    <circle cx="0" cy="-6" r="14" fill="#0d5c2e"/>
+    <path d="M0-16l3.2 6.6 7.2.8-5.4 4.8 1.5 7-6.5-3.8-6.5 3.8 1.5-7-5.4-4.8 7.2-.8z" fill="#f4d03f"/>
+    <path d="M6-2a8 8 0 1 1-8-10 7 7 0 0 0 8 10z" fill="#f4d03f"/>
+  </g>
+  <text x="60" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#1a3a6b">NAVTTC</text>
+</svg>
