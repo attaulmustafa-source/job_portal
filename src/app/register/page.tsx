@@ -28,7 +28,7 @@ function EyeIcon({ open }: { open: boolean }) {
   );
 }
 
-function RegisterPage() {
+function RegisterForm()  {
   const { register } = useAuth();
   const router = useRouter();
   const searchParams = useSearchParams();
