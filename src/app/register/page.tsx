@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, Suspense, useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Alert } from "@/components/ui/Alert";
 import { AuthBrandPanel } from "@/components/auth/AuthBrandPanel";
@@ -28,7 +28,7 @@ function EyeIcon({ open }: { open: boolean }) {
   );
 }
 
-export default function RegisterPage() {
+function RegisterPage() {
   const { register } = useAuth();
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -231,5 +231,12 @@ export default function RegisterPage() {
         </div>
       </div>
     </div>
+  );
+}
+export default function RegisterPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#2a3344]" />}>
+      <RegisterForm />
+    </Suspense>
   );
 }
